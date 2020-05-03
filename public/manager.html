@@ -1,0 +1,134 @@
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>hEALTHCARE DAPP</title>
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+      <!-- Google Fonts -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+      <!-- Bootstrap core CSS -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Material Design Bootstrap -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.1/css/mdb.min.css" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <script src="bundle.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Health Care Dapp</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+         
+          <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">
+                      <i class="fas fa-info-circle"></i>About Us
+                    <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+               
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-user"></i> Profile </a>
+                  <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
+                    <a class="dropdown-item" href="#">My account</a>
+                    <a class="dropdown-item" href="#">Log out</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+      </div>
+    </nav>
+    <br>
+    <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card border-info ">
+          <div class="card-header bg-info border-info h4 text-center"><b>Add Purchase Details</b></div>
+          <div class="card-body">
+          
+            <p class="card-text">
+          
+              <!-- Default form register -->
+  <form  id="create" >
+  <!-- Suppliers name -->
+  <input type="text"  id="sup_name" class="form-control mb-4" placeholder="Suppliers Name">
+  <div class="form-row mb-4">
+      <div class="col">
+         
+          <input type="text" id="drug_name" class="form-control" placeholder="Drug Name">
+      </div>
+      <div class="col">
+        
+          <input type="number" id="quant" class="form-control" placeholder="Quantity">
+      </div>
+  </div>
+  
+  <div class="form-row mb-4">
+      <div class="col">
+          <!-- First name -->
+          <input type="date" id="dop" class="form-control" placeholder="Purchase Date">
+      </div>
+      <div class="col">
+          <!-- Last name -->
+          <input type="date"  id="doe" class="form-control" placeholder="Expiry Date">
+      </div>
+  </div>
+  
+  <small  class="form-text text-muted mb-4 text-center">
+      <p>After clicking
+          <em>Submit</em> you cannot change details later
+  
+  </small>
+  
+  
+  <!-- Sign up button -->
+  <button class="btn btn-info my-4 btn-block" type="submit">Submit</button>
+  <p id="create-result"></p>
+  <!-- Social register -->
+  
+  
+  <hr>
+  
+  <!-- Terms of service -->
+  
+  </form>
+  <!-- Default form register -->
+ 
+            </p>
+          
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card border-info " style="height :427px; overflow-y: scroll;">
+          <div class="card-header bg-info border-info h4 text-center">Purchase History</div>
+          <div class="card-body border-info">
+  
+              <div id="history" class=" row row-cols-1 row-cols-md-2">
+              
+                 
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- JQuery -->
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.1/js/mdb.min.js"></script>
+  </body>
+</html>

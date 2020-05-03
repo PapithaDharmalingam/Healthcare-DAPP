@@ -1,158 +1,126 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<script src="web3.js"></script>
-	<script src="bundle.js"></script>
-    <!-- Font Awesome -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-<!-- Google Fonts -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-<!-- Bootstrap core CSS -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-<!-- Material Design Bootstrap -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.1/css/mdb.min.css" rel="stylesheet">
-</head>
-<!--body-->
-<body >
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Health Care Dapp</a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-           
-            <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
-                <ul class="navbar-nav ml-auto">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="#">
-                        <i class="fas fa-info-circle"></i>About Us
-                      <span class="sr-only">(current)</span>
-                    </a>
-                  </li>
-                 
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown"
-                      aria-haspopup="true" aria-expanded="false">
-                      <i class="fas fa-user"></i> Profile </a>
-                    <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
-                      <a class="dropdown-item" href="#">My account</a>
-                      <a class="dropdown-item" href="#">Log out</a>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-        </div>
-      </nav>
-      <br>
-      <div class="container">
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="card border-info ">
-            <div class="card-header bg-info border-info h4 text-center"><b>Add Purchase Details</b></div>
-            <div class="card-body">
-            
-              <p class="card-text">
-            
-                <!-- Default form register -->
-<form  id="set_data" action="">
-    <!-- Suppliers name -->
-    <input type="text"  id="sup_name" class="form-control mb-4" placeholder="Suppliers Name">
-    <div class="form-row mb-4">
-        <div class="col">
-           
-            <input type="text" id="drug_name" class="form-control" placeholder="Drug Name">
-        </div>
-        <div class="col">
-          
-            <input type="number" id="quant" class="form-control" placeholder="Quantity">
-        </div>
-    </div>
-
-    <div class="form-row mb-4">
-        <div class="col">
-            <!-- First name -->
-            <input type="date" id="dop" class="form-control" placeholder="Purchase Date">
-        </div>
-        <div class="col">
-            <!-- Last name -->
-            <input type="date"  id="doe" class="form-control" placeholder="Expiry Date">
-        </div>
-    </div>
-
-    <small  class="form-text text-muted mb-4 text-center">
-        <p>After clicking
-            <em>Submit</em> you cannot change details later
-    
-    </small>
-   
-
-    <!-- Sign up button -->
-    <button class="btn btn-info my-4 btn-block" type="submit">Submit</button>
-
-    <!-- Social register -->
-   
-
-    <hr>
-
-    <!-- Terms of service -->
-    
-</form>
-<!-- Default form register -->
-<div class="wrap-input100 bg1 rs1-wrap-input100">Data:
-    <span id="data"></span></div>
-              </p>
-            
-            </div>
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>hEALTHCARE DAPP</title>
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+      <!-- Google Fonts -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+      <!-- Bootstrap core CSS -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Material Design Bootstrap -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.1/css/mdb.min.css" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <script src="bundle.js"></script>
+  </head>
+  <body>
+    <div class="container ">
+      <div class="jumbotron card card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Others/gradient1.jpg);">
+        <div class="text-white text-center py-5 px-4">
+          <div>
+            <h2 class="card-title h1-responsive pt-3 mb-5 font-bold"><strong>HEALTHCARE DAPP</strong></h2>
+            <p class="mx-5 mb-5">This system also aims to use blockchain technology for storing the details of drugs and equipment purchases 
+              carried out by the hospital for the following reasons.This system focuses on creating a health care based decentralised app which 
+              allows patient centric medical record management and efficient storage of the drugs and medical equipment purchase details
+            </p>
           </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="card border-info " style="height :427px; overflow-y: scroll;">
-            <div class="card-header bg-info border-info h4 text-center">Purchase History</div>
-            <div class="card-body border-info">
 
-                <div class=" card-deck row mx-2">
-                <div class="card border-success col-sm-6 " style="background-color: #61ff99" >
-                    <div class="card-body ">
-                      <h5 class="card-title">Drug Name</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">Suppliers name</h6>
-                      <ul class="card-text">
-                          <li>DOP:</li>
-                          <li>DOE:</li>
-                        </ul>
-                     
-                    </div>
-                  </div>
-                
-                  <div class="card border-success col-sm-6"style="background-color: #61ff99" >
-                    <div class="card-body">
-                      <h5 class="card-title">Drug Name</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">Suppliers name</h6>
-                      <ul class="card-text">
-                          <li>DOP:</li>
-                          <li>DOE:</li>
-                        </ul>
-                     
-                    </div>
-                  </div>
-                </div>
-            </div>
-          </div>
         </div>
       </div>
+   <div class="container mx-5 px-5">
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+          aria-controls="pills-home" aria-selected="true"> Doctor</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+          aria-controls="pills-profile" aria-selected="false">Patient</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
+          aria-controls="pills-contact" aria-selected="false">Manager</a>
+      </li>
+    </ul>
+    <div class="tab-content pt-2 pl-1" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+       <!-- Default form login -->
+       <div class="col-6 mx-auto ">
+<form id="doctorSignUp"class="text-center border border-light p-5" >
+
+  <p class="h4 mb-4">LOGIN DOCTOR</p>
+
+  <!-- Email -->
+  <input type="email" id="doctorUserName" class="form-control mb-4" placeholder="UserId">
+
+  <!-- Password -->
+  <input type="password" id="doctorPassword" class="form-control mb-4" placeholder="Password">
+
+ 
+  <!-- Sign in button -->
+  <a class="btn btn-info btn-block my-4" id="doctorsubmit" >Log in</a>
+  <p id="errorDoctor"></p>
+  
+
+</form>
+</div>
+<!-- Default form login -->
+      </div>
+      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+        <div class="col-6 mx-auto ">
+          <form id="patientSignUp"class="text-center border border-light p-5 " >
+          
+            <p class="h4 mb-4">LOGIN PATIENT</p>
+          
+            <!-- Email -->
+            <input type="email" id="patientUserName" class="form-control mb-4" placeholder="UserId">
+          
+            <!-- Password -->
+            <input type="password" id="patientPassword" class="form-control mb-4" placeholder="Password">
+          
+           
+            <!-- Sign in button -->
+            <a class="btn btn-info btn-block my-4" id="patientsubmit">Log in</a>
+            <p id="errorPatient"></p>
+          </form>
+          </div>
+      </div>
+      <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+        <div class="col-6 mx-auto ">
+        
+          <form id="managerSignUp"class="text-center border border-light p-5 " >
+            <p class="h4 mb-4">ADMIN</p>
+          
+            <!-- Email -->
+            <input type="email" id="managerUserName" class="form-control mb-4" placeholder="UserId">
+          
+            <!-- Password -->
+            <input type="password" id="managerPassword" class="form-control mb-4" placeholder="Password">
+          
+           
+            <!-- Sign in button -->
+            <a class="btn btn-info btn-block my-4"  id ="managerSubmit">Log in</a>
+          
+            <p id="errorManager"></p>
+          </form>
+         
+          </div>
+      </div>
     </div>
-      <!-- JQuery -->
-    
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<!-- Bootstrap tooltips -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-<!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
-<!-- MDB core JavaScript -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.1/js/mdb.min.js"></script>
-</body>
+
+   </div>
+   </div>
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.1/js/mdb.min.js"></script>
+  </body>
+
 </html>
